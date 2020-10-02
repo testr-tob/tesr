@@ -1,0 +1,11 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="300" height="200"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="blue" />
+  <circle cx="150" cy="100" r="80" fill="white" onmouseover="document.getElementById('test').textContent+='b';evt.target.removeAttribute('onmouseover');" onmouseout="e=document.getElementById('test');e.textContent+='c';evt.target.removeAttribute('onmouseout');" onclick="document.getElementById('test').textContent+='d';evt.target.removeAttribute('onclick');"/>
+  <text id="test" x="150" y="125" font-size="60" text-anchor="middle" fill="red"></text>
+  <script>
+    document.getElementById("test").textContent+="a";
+  </script>
+</svg>
